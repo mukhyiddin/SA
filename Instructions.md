@@ -9,5 +9,5 @@ For Example :
                 {1, 1, 0, 1}
                 {0, 1, 0, 0}
                 {1, 1, 1, 1}
-  This is the  display (grey ends = 0)             
+  This is the  display (grey block is dead ends = 0)             
 https://www.geeksforgeeks.org/wp-content/uploads/ratinmaze_filled11.png
