@@ -22,4 +22,7 @@ boolean solveMazeUtil(int maze[][], int x, int y,
                       int sol[][])
 { }                      
 
+    
+    public static void main(String args[])
+    {}
 }
