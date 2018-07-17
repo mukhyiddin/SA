@@ -17,12 +17,25 @@ boolean solveMaze(int maze[][])
     printSolution(sol);
     return true;
 }
-
-boolean solveMazeUtil(int maze[][], int x, int y,
-                      int sol[][])
-{ }                      
-
-    
+boolean solveMazeUtil(int maze[][], int x, int y, int sol[][])
+ {      
+        if (x == N - 1 && y == N - 1)
+        {
+            sol[x][y] = 1;
+            return true;
+        }
+        if (isSafe(maze, x, y) == true)
+        {
+            sol[x][y] = 1;
+            if (solveMazeUtil(maze, x + 1, y, sol))
+                return true;
+            if (solveMazeUtil(maze, x, y + 1, sol))
+                return true;
+            sol[x][y] = 0;
+            return false;
+        }
+        return false;
+    }                         
     public static void main(String args[])
     {}
 }
