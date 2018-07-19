@@ -37,5 +37,14 @@ boolean solveMazeUtil(int maze[][], int x, int y, int sol[][])
         return false;
     }                         
     public static void main(String args[])
-    {}
+    {
+        SA_UAS rat = new SA_UAS();
+        int maze[][] = {
+            {1, 0, 0, 0},
+            {1, 1, 1, 1},
+            {0, 1, 0, 0},
+            {1, 1, 1, 1}
+        };
+        rat.solveMaze(maze);
+    }
 }
