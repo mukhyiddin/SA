@@ -1,11 +1,14 @@
 public class UAS_SA { 
-
+final int N = 5;
+    
 boolean solveMaze(int maze[][])
 {
-    int sol[][] = {{0, 0, 0, 0},
+    int sol[][] = {
         {0, 0, 0, 0},
         {0, 0, 0, 0},
-        {0, 0, 0, 0}
+        {0, 0, 0, 0},
+        {0, 0, 0, 0},
+        {0, 0, 0, 0},
     };
 
     if (solveMazeUtil(maze, 0, 0, sol) == false)
@@ -40,10 +43,11 @@ boolean solveMazeUtil(int maze[][], int x, int y, int sol[][])
     {
         SA_UAS rat = new SA_UAS();
         int maze[][] = {
-            {1, 0, 0, 0},
-            {1, 1, 1, 1},
-            {0, 1, 0, 0},
-            {1, 1, 1, 1}
+            {1, 0, 0, 0, 0},
+            {1, 1, 1, 1, 1},
+            {0, 1, 0, 0, 0},
+            {1, 1, 1, 1, 1},
+            {0, 0, 1, 0, 1}
         };
         rat.solveMaze(maze);
     }
